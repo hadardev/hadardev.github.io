@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+	<title dir="rtl">טופס יצירת קשר  </title>
+	<link rel="shortcut icon" type="img/png" href="phone_18_w.png">
+	<link rel="stylesheet" type="text/css" href="formStyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+<body>
+	<div class="dts">
+		<p dir="rtl">
+			טלפון 052-4698738 &nbsp; אימיייל: idan.nitzan.nd@gamil.com
+		</p>
+	</div>
+
+
+
+	<div>
+		<form action="mailto:hadaribi@hotmail.com" method="post" enctype="text/plain">
+
+			<label dir="rtl" for="fullname">שם מלא:</label>
+			<input type="text" id="fullname" name="user_name" placeholder="שמך המלא" required=""><br> 
+
+			<label dir="rtl" for="mail">אימייל:</label>
+			<input type="Email" id="mail" name="EmailAdress" placeholder="כתובת המייל שלך" required><br>
+
+			<label dir="rtl" for="number">מספר טלפון:</label>
+			<input type="text" id="number" name="user_number" required=""><br>
+				
+			<label dir="rtl" for="msg">הודעה:</label>
+			<textarea id="msg" name="user_message"></textarea><br>
+
+			<div class="button">
+				<button type="submit">שלח</button>
+			</div>
+		
+		</form>
+	</div>
+
+</body>
+</html>
