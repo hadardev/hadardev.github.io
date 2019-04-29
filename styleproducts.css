@@ -65,6 +65,10 @@ p {
       font-size: 15px;
     }
 
+    a.active {
+      color: white;
+    }
+
 /********************** HEADER SHOW CASE *************************/
 #showcase {
   min-height: 450px;
@@ -73,8 +77,8 @@ p {
 
 #showcase .bg-img {
   position: absolute;
-  background: #EFBF8D url('img/tapuz1.jpg');
-  background-position: center;
+  background: #EFBF8D url('img/bowl-can-cloth-531996.jpg');
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -119,6 +123,7 @@ p {
 .card-content {
   padding: 1.5em;
 }
+
 /********************** SECTION-c *************************/
 #section-c {
   background: #EFBF8D ;

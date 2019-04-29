@@ -4,44 +4,144 @@
 	<title dir="rtl">טופס יצירת קשר  </title>
 	<link rel="shortcut icon" type="img/png" href="phone_18_w.png">
 	<link rel="stylesheet" type="text/css" href="formStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 </head>
 <body>
-	<div class="dts">
-		<p dir="rtl">
-			טלפון 052-4698738 &nbsp; אימיייל: idan.nitzan.nd@gamil.com
-		</p>
-	</div>
-
-
-
+	<!-- Navgation Bar -->
+    <nav id="navbar" class="topnavbar">
+      <div class="topnavbar" id="mytopnavbar">
+      <a href="index4.0.html"><img src="img/orange circle HQ.gif" class="logo" alt="logo"></a>
+      <a href="natropathy.html">נטרופתיה</a>
+      <a href="reflexology.html">רפלקסולוגיה</a>
+      <a href="aroma.html">ארומתרפיה</a>
+      <a href="plants.html">צמחי מרפא</a>
+      <a href="products.html">מוצרים</a>
+      <a href="about.html">אודות</a>
+      <a href="contactform.html" class="active">☎</a>
+      <a href="#" class="icon" onclick="displayMenu()"><img src="img/menu.png"></a>
+    </div>
+    </nav>
+    <!-- Header Showcase -->
+    <header id="showcase" class="grid">
+      <div class="bg-img"></div>
+      <div class="content-wrap">
+         <!--  <h1>עידן ניצן  - רפואה טבעית</h1>
+          <p>לא חייב להיות פה טקסט </p>
+          <p>עידן ניצן עידן ניצן עידן ניצן עידן ניצן
+          האם השם כבר איבד משמעות עבורך? מה זה עידן? מה זה ניצן?</p>
+           <a href="#section-b" class="btn">המשיכי</a> -->
+      </div> 
+    </header>
+    <!-- Main Area -->
+    <main id="main">
+    <!-- Section-a -->
+      <section id="section-a" class="grid">
+        <div class="content-wrap">
+          <h2 class="content-title">אל תהיו זרים</h2>
+            <div class="content-text"> 
+				<p dir="rtl">טלפון 052-4698738 </p>
+				<p>אימיייל: idan.nitzan.nd@gamil.com</p>	<!-- need to add here an a tag with link to mail-->
+				<p>הקליניקה שלי נמצאת בעמק המומינים. מוזמנים</p>
+            </div>
+        </div>
+      </section>
+      <!-- Section-b -->
+      <!-- <section id="section-b" class="grid">
+        <ul>
+          <li>
+            <div class="card">
+              <img src="">
+              <div class="card-content">
+                <h3 class="card-title"></h3>
+                <p> </p>
+                <a href="reflexology.html" class="btn">ספר לי עוד</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <img src="">
+              <div class="card-content">
+                <h3 class="card-title"></h3>
+                <p> </p><br>
+                <a href="plants.html" dir="rtl" class="btn">ספר לי עוד</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <img src="">
+              <div class="card-content">
+                <h3 class="card-title"></h3>
+                <p> </p>
+                <a href="aroma.html" dir="rtl" class="btn">ספר לי עוד</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section> -->
+      <!-- Section-c -->
+      <!-- <section id="section-c" class="grid">
+        <div class="content-wrap">
+          <h2 class="content-title"></h2>
+          <p dir="rtl"></p>
+        </div>
+      </section>   -->   
+     <!-- Section-d -->
+     <!-- <section id="section-d" class="grid">
+      <div class="box">
+        <h2 class="content-title"></h2>
+        <p></p>
+        <p></p>
+        <a href="contactform.html" class="btn">השארת פרטים</a>
+      </div>
+      <div class="box">
+        <h2 class="content-title"></h2>
+        <p dir="rtl"> </p>
+        <a href="contactform.html" class="btn">השארת פרטים</a>
+      </div>
+     </section> -->
+    </main>
+    
 	<div>
 		<form action="mailto:hadaribi@hotmail.com" method="post" enctype="text/plain">
-
 			<label dir="rtl" for="fullname">שם מלא:</label>
 			<input type="text" id="fullname" name="user_name" placeholder="שמך המלא" required=""><br> 
 
 			<label dir="rtl" for="mail">אימייל:</label>
-			<input type="Email" id="mail" name="EmailAdress" placeholder="כתובת המייל שלך" required><br>
+			<input type="Email" id="mail" name="EmailAdress" placeholder="כתובת המייל שלך" required=""><br>
 
 			<label dir="rtl" for="number">מספר טלפון:</label>
 			<input type="text" id="number" name="user_number" required=""><br>
 				
 			<label dir="rtl" for="msg">הודעה:</label>
-			<textarea id="msg" name="user_message"></textarea><br>
+			<textarea id="msg" name="user_message" required=""></textarea><br>
 
-			<div class="button">
-				<button type="submit">שלח</button>
+			<div>
+				<button type="submit" class="btn">שלח</button>
+				<button type="reset" value="reset" class="btn">מחיקה</button>
 			</div>
-		
 		</form>
-	</div>
+	</div>           
+    <!-- Footer -->
+            <footer class="footer" class="grid">
+              <p dir="rtl">עידן ניצן 052-4698738 ☎</p>
+              <p><a href="https://www.facebook.com/%D7%A2%D7%99%D7%93%D7%9F-%D7%A0%D7%99%D7%A6%D7%9F-%D7%A8%D7%A4%D7%95%D7%90%D7%94-%D7%98%D7%91%D7%A2%D7%99%D7%AA-356931294465525/" target="_blank"><img src="img/facebook.png" class="fa-icon"></a><a href="https://www.instagram.com/lisafreestyle/?hl=en" target="_blank"><img src="img/instagram.png" class="fa-icon"></a><a href="#"><img src="img/gmail.png" class="fa-icon"></a></p>
+              <a href="#showcase" dir="rtl" class="backtotop" style="float: right;">חזרה למעלה</a>
+            </footer>
+    </div>
+    <script type="text/javascript">
+            function displayMenu(){
+              var x = document.getElementById("mytopnavbar");
+              if (x.className == "topnavbar") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnavbar";
+              }
+            }
+    </script>  
+	
 
 </body>
 </html>

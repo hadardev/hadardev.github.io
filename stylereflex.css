@@ -64,6 +64,9 @@ p {
       display: none;
       font-size: 15px;
     }
+    a.active {
+      color: white;
+    }
 
 /********************** HEADER SHOW CASE *************************/
 #showcase {
@@ -73,7 +76,7 @@ p {
 
 #showcase .bg-img {
   position: absolute;
-  background: #EFBF8D url('img/tapuz1.jpg');
+  background: #EFBF8D url('img/adult-feet-female-1274061-Photo by EVG photos from Pexels.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
