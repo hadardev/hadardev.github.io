@@ -1,12 +1,77 @@
-/********************** Core Styles *************************/
+/********************** Form Style *************************/
 body {
-    margin: 0 ;
-    font-family: 'Heebo', Arial, Helvetica, sans-serif;
-    background-color: #ECC8B0;
-    font-size: 1.1rem;
-    line-height: 1.5;
-    text-align:center;
+  font-family: 'Heebo', Arial, Helvetica, sans-serif;
+  align-content: center;
+  margin: 0 ;
+  background-color: #ECC8B0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align:center;
 }
+form {
+/* this is to center the form on the page */
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 300PX;
+/* to see the outline of the form */
+	padding: 1em;
+}
+
+fieldset {
+  border: 2px solid black;
+}
+
+/* to make sure all labels are lined up*/
+label {
+	display: inline-block;
+	text-align: right;
+	padding: 10px;
+	font-size: 1.5rem;
+}
+
+input, textarea, select {
+/* To give the same size to all text fields */
+	width: 250px;
+	box-sizing: border-box;
+/* To harmonize the look & feel of text field border */
+	border: 1px solid #999;
+  padding: 0.7em;
+}
+textarea {
+	/* to align with to the top*/
+	vertical-align: text-top;
+	height: 10em;
+}
+
+::placeholder {
+  font-family: 'Heebo', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: black;
+  opacity: 0.5; 
+}
+
+select {
+  font-family: 'Heebo', Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  font-family: 'Heebo', Arial, Helvetica, sans-serif;
+   display: inline-block;
+    background-color: #D12323;
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    margin: 0.5em 0;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #CE6F2D;
+}
+
+/********************** Default Styles *************************/
+/********************** Core Styles ***************************/
 
 #main img {
   display: block;
@@ -24,7 +89,7 @@ p {
   padding: 1em 0;
 }
 
-.btn {
+button.btn {
     display: inline-block;
     background-color: #D12323;
     text-decoration: none;
@@ -32,17 +97,16 @@ p {
     padding: 1em;
     margin: 0.5em 0;
     border-radius: 10%;
+    cursor: pointer;
 }
 
-.btn:hover {
+button.btn:hover {
     background-color: #CE6F2D;
 }
 /********************** NAVBAR *************************/
     .logo {
-      height: 43px;
-      width: 43px;
-      position: relative;
-      right: 25px;
+      height: 40px;
+      width: 40px;
     }
     .topnavbar {
       background: #ECC8B0;
@@ -66,7 +130,8 @@ p {
       display: none;
       font-size: 15px;
     }
-    a.active {
+
+   a.active {
       color: white;
     }
 
@@ -78,7 +143,7 @@ p {
 
 #showcase .bg-img {
   position: absolute;
-  background: #EFBF8D url('img/adult-feet-female-1274061-Photo by EVG photos from Pexels.jpg');
+  background: #EFBF8D url('img/antique-classic-communication-207456.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,6 +161,10 @@ p {
 #showcase .content-wrap, 
 #section-a .content-wrap {
   padding: 0 1.5em;
+}
+ 
+#section-a .content-text {
+  text-align: center;
 }
 
 /********************** SECTION-a *************************/
@@ -166,14 +235,14 @@ p {
     grid-template-columns: 1fr repeat(2, minmax(auto,25em)) 1fr;
   }
 
-  #section-a .content-text {
+ /* #section-a .content-text {
     columns: 2;
     column-gap: 2em;
   }
 
    #section-a .content-text p {
     padding-top: 0; 
-   }
+   }*/
 
   .content-wrap, #section-b ul {
     grid-column: 2/4;

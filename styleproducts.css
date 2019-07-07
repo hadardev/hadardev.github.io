@@ -39,8 +39,10 @@ p {
 }
 /********************** NAVBAR *************************/
     .logo {
-      height: 40px;
-      width: 40px;
+      height: 43px;
+      width: 43px;
+      position: relative;
+      right: 25px;
     }
     .topnavbar {
       background: #ECC8B0;

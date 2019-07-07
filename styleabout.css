@@ -1,50 +1,12 @@
-/********************** Form Style *************************/
-body {
-  background-color: #ECC8B0;
-  font-family: 'Heebo', Arial, Helvetica, sans-serif;
-  align-content: center;
-  margin: 0 ;
-  font-family: 'Heebo', Arial, Helvetica, sans-serif;
-  background-color: #ECC8B0;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  text-align:center;
-}
-form {
-/* this is to center the form on the page */
-	margin: 0 auto;
-	margin-top: 30px;
-	width: 350PX;
-/* to see the outline of the form */
-	padding: 1em;
-	/*border: 3px solid black;*/
-	/*border-radius: 1em;*/
-}
-/* to make sure all labels are lined up*/
-label {
-	display: inline-block;
-	width: 200px;
-	text-align: right;
-	padding: 10px;
-	font-size: 1.5rem;
-
-}
-
-input, textarea {
-/* To give the same size to all text fields */
-	width: 250px;
-	box-sizing: border-box;
-/* To harmonize the look & feel of text field border */
-	border: 1px solid #999;
-}
-textarea {
-	/* to align with to the top*/
-	vertical-align: text-top;
-	height: 10em;
-}
-
-/********************** Default Styles *************************/
 /********************** Core Styles *************************/
+body {
+    margin: 0 ;
+    font-family: 'Heebo', Arial, Helvetica, sans-serif;
+    background-color: #ECC8B0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align:center;
+}
 
 #main img {
   display: block;
@@ -70,19 +32,92 @@ p {
     padding: 1em;
     margin: 0.5em 0;
     border-radius: 10%;
-    cursor: pointer;
 }
 
 .btn:hover {
     background-color: #CE6F2D;
 }
+
+/********************** SLIDE SHOW IMAGES *************************/
+
+* {box-sizing: border-box;}
+
+/* slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+/* hide the images by default*/
+.mySlides {
+  display: none;
+}
+
+/* next & previous buttons*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* position of the "next button" to the right*/
+.next {
+  left: 5%;
+}
+
+.prev {
+  right: 5%;
+}
+
+/* on hover, add a black background color with a bit trasparent*/
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* caption text*/
+.imagetext {
+  color: red;
+  font-size: 1.1em;
+  position: absolute;
+  width: 100%;
+  bottom: 20%;
+  text-align: center;  
+  font-weight: bold;  
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
 /********************** NAVBAR *************************/
     .logo {
-      height: 40px;
-      width: 40px;
+      height: 43px;
+      width: 43px;
+      position: relative;
+      right: 25px;
     }
     .topnavbar {
-      background: #ECC8B0;
+      background: #ECC8B0 ;
       overflow: hidden;
       top: 0;
       width: 100%;
@@ -104,10 +139,6 @@ p {
       font-size: 15px;
     }
 
-   a.active {
-      color: white;
-    }
-
 /********************** HEADER SHOW CASE *************************/
 #showcase {
   min-height: 450px;
@@ -116,7 +147,7 @@ p {
 
 #showcase .bg-img {
   position: absolute;
-  background: #EFBF8D url('img/antique-classic-communication-207456.jpg');
+  background: #EFBF8D url('img/tapuz1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -232,7 +263,7 @@ p {
 }
 
 /************** MEDIA QUERIES NAVGATION BAR ***********/
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 785px) {
       .topnavbar a:not(:first-child){
         display: none;
       }

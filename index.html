@@ -3,15 +3,16 @@
 <head>
     <title dir="rtl"> עידן ניצן  | רפואה טבעית </title>
     <link rel="shortcut icon" type="image/png" href="img/orange circle HQ.gif"/>
-    <link rel="stylesheet" type="text/css" href="style4.0.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 </head>
 <body>
     <!-- Navgation Bar -->
     <nav id="navbar" class="topnavbar">
       <div class="topnavbar" id="mytopnavbar">
-      <a href="index4.0.html"><img src="img/orange circle HQ.gif" class="logo" alt="logo"></a>
+      <a href="index.html"><img src="img/orange circle HQ.gif" class="logo" alt="logo"></a>
       <a href="natropathy.html">נטרופתיה</a>
       <a href="reflexology.html">רפלקסולוגיה</a>
       <a href="aroma.html">ארומתרפיה</a>
@@ -41,7 +42,7 @@
         <div class="content-wrap">
           <h2 class="content-title">קצת עליי</h2>
             <div class="content-text">
-            <p>היי, אני עידן, נטורופת מוסמך, רפלקסולוג בכיר, מטפל בצמחי מרפא, ארומתרפיה, פרחי באך, רייקי ועוד. 
+            <p>היי, אני עידן, נטורופת מוסמך, DDDרפלקסולוג בכיר, מטפל בצמחי מרפא, ארומתרפיה, פרחי באך, רייקי ועוד. 
             כיום אני מטפל באופן פרטי, בנוסף בשבע השנים האחרונות אני חלק מצוות ההוראה של מכללת רידמן כאסיסטנט ומתרגל במגמת הרפלקסולוגיה ובונה פורמולות צמחים ושמנים אתריים בהתאמה אישית.
             </p>
             </div>
@@ -110,6 +111,7 @@
             <footer class="footer" class="grid">
               <p dir="rtl">עידן ניצן 052-4698738 ☎</p>
               <p><a href="https://www.facebook.com/%D7%A2%D7%99%D7%93%D7%9F-%D7%A0%D7%99%D7%A6%D7%9F-%D7%A8%D7%A4%D7%95%D7%90%D7%94-%D7%98%D7%91%D7%A2%D7%99%D7%AA-356931294465525/" target="_blank"><img src="img/facebook.png" class="fa-icon"></a><a href="https://www.instagram.com/lisafreestyle/?hl=en" target="_blank"><img src="img/instagram.png" class="fa-icon"></a><a href="#"><img src="img/gmail.png" class="fa-icon"></a></p>
+              <p id="date" dir="ltr"></p>
               <a href="#showcase" dir="rtl" class="backtotop" style="float: right;">חזרה למעלה</a>
             </footer>
     </div>
@@ -122,6 +124,10 @@
                 x.className = "topnavbar";
               }
             }
+
+            var todayDate = new Date();
+            document.getElementById("date").innerHTML = todayDate;
+
     </script>  
 </body>
 </html>
