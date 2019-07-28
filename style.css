@@ -62,6 +62,7 @@ p {
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+      font-weight: bold;
     }
     .topnavbar a:hover {
       color: #fff;
@@ -124,12 +125,15 @@ p {
   padding: 0 1.5em;
 }
 
+#showcase a {
+  transition: 0.6s;
+}
 /********************** SECTION-a *************************/
-#section-a {
+/*#section-a {
   background: #CE6F2D;
   color: black;
   padding-bottom: 2em;
-}
+}*/
 /********************** SECTION-b *************************/
 #section-b {
   padding: 2em 1em 1em;
@@ -154,17 +158,37 @@ p {
 #section-c {
   background: #EFBF8D ;
   padding: 2em;
+
+}
+
+#section-c ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#section-c li {
+  padding: 2em;
+  width: 64px;
+  margin: 0 auto;
+  
+}
+
+h5 {
+  cursor: pointer;
 }
 /********************** SECTION-d *************************/
-#section-d .box {
+#section-d {
   padding: 2em;
   color:white;
   background: #F2A75A;
 }
 
-#section-d .box:first-child {
+/*#section-d .box:first-child {
   background: #F2A75A;
-}
+}*/
 
 /********************** FOOTER *************************/
 
@@ -184,6 +208,17 @@ p {
   color: white;
   text-decoration: none;
 }
+
+footer .fa-arrow-up {
+  size: 30px;
+  color: white;
+  float: left;
+}
+/************** FORM STYLE ***********/
+
+
+
+
 /************** MEDIA QUERIES ***********/
 
 @media(min-width: 700px) {
@@ -217,6 +252,8 @@ p {
   #section-b li {
     width: 31%;
     }
+
+
 }
 
 /************** MEDIA QUERIES NAVGATION BAR ***********/
