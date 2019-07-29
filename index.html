@@ -23,7 +23,7 @@
         <a href="#">רייקי</a>
         <a href="products.html">מוצרים</a>
         <a href="about.html">אודות</a>
-        <a href="#" class="icon" onclick="displayMenu()">
+        <a href="#" class="icon" onclick="displayMenu();clickOutside();"/>
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
@@ -128,21 +128,50 @@
       </section>     
      <!-- Section-d -->
      <section id="section-d" class="grid">
+        <h3>מטופלים ממליצים</h3>
+        <ul>
+          <li>
+            <div class="card">
+              <div class="card-content">
+                <h3 class="card-title">עליזה, פ"ת</h3>
+                <p>מאז שעידן התחיל לטפל בי, כל הכאבים נעלמו, ואיכות החיים שלי חזרה סופסוף  <a href="#">עוד...</a></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <div class="card-content">
+                <h3 class="card-title">שושי, קרית אונו</h3>
+                <p>עידן הוא הקוסם שלי, אני לא מחמיצה אף טיפול איתו , והכי חשוב - הפטריה שלי נעלמה!<a href="#">עוד...</a></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <div class="card-content">
+                <h3 class="card-title">איציק, כפר סבא</h3>
+                <p>אני חייב לשתף  אתכם ,בהתחלה לא האמנתי, מה שראיתי אח"כ היה <a href="#">עוד...</a></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+     <!-- <section id="section-d" class="grid"> -->
       <!-- <div class="box">
         <h2 class="content-title">צרו קשר</h2>
         <p>השאירו פרטים ונחזור אליכם תוך  48 שנים.</p>
         <p>idan.nitzan.nd@gmail.com</p>
         <a href="contactform.html" class="btn">השארת פרטים</a>
       </div> -->
-        <div class="content-wrap">
+        <!-- <div class="content-wrap">
           <h2 class="content-title">מטופלים ממליצים</h2>
           <ul>
-            <li><p dir="rtl">מחולק  לעמודות,  עמודה אחת בלי כפתור גדול,. <span><a href="#">קרא/י עוד...</a></span> </p></li>
-            <li><p dir="rtl">מחולק  לעמודות, בעמודה שניה לי כפתור גדול,. <span><a href="#">קרא/י עוד...</a></span> </p></li>
-            <li><p dir="rtl">מחולק  לעמודות,  עמודה שלישית בלי כפתור גדול,. <span><a href="#">קרא/י עוד...</a></span> </p></li>
+            <li><p dir="rtl" class="card">מחולק  לעמודות,  עמודה אחת בלי כפתור גדול,. <span><a href="#">קרא/י עוד...</a></span> </p></li>
+            <li><p dir="rtl" class="card">מחולק  לעמודות, בעמודה שניה לי כפתור גדול,. <span><a href="#">קרא/י עוד...</a></span> </p></li>
+            <li><p dir="rtl" class="card">מחולק  לעמודות,  עמודה שלישית בלי כפתור גדול,. <span><a href="#">קרא/י עוד...</a></span> </p></li>
           </ul>
-        </div>
-     </section>
+        </div> -->
+     <!-- </section> -->
     </main>              
     <!-- Footer -->
             <footer class="footer" class="grid">
@@ -169,6 +198,17 @@
                 x.className = "topnavbar";
               }
             }
+         /**************  When the user clicks anywhere outside of the navbar, close it  ********************/
+             function clickOutside() {
+              window.addEventListener('mouseup', function(event){
+              var nav = document.getElementById("mytopnavbar");
+              if(event.target != nav && event.target.parentNode != nav){
+                nav.className += ' responsive';
+                nav.classList = 'topnavbar';
+                }
+               });
+             }
+             
         /************** Hide Navbar on Scroll Down ********************/
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
