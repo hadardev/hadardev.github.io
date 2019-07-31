@@ -427,3 +427,16 @@ footer .fa-arrow-up {
     padding-left: 20px;
   }
 }
+
+
+/************** MEDIA QUERIES VERY SMALL SCREENS ***********/
+@media screen and (max-width: 400px) {
+  .company-info-form .text-info {
+    font-size: 0.8em;
+  }
+
+  .company-info-form h3 {
+    font-size: 1em;
+  }
+  
+}
