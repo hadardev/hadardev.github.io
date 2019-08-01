@@ -106,7 +106,7 @@ p {
 
 #showcase .bg-img {
   position: absolute;
-  background: #EFBF8D url('img/tapuz1.jpg');
+  background: #EFBF8D url('img/tapuz1_new.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -450,6 +450,7 @@ footer .fa-arrow-up {
     font-size: 1em;
   }
 
+
   .container-form {
   margin-left: auto;
   margin-right: auto;
@@ -457,4 +458,6 @@ footer .fa-arrow-up {
   }
 
 
+
+  
 }
