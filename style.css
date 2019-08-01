@@ -184,6 +184,15 @@ p {
 h5 {
   cursor: pointer;
 }
+
+#section-c ul li {
+  transition: 1s ease-in-out;
+}
+
+#section-c ul li:hover {
+  transform: scale(1.2);  
+}
+
 /********************** SECTION-d *************************/
 /*#section-d {
   padding: 2em;
