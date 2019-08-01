@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/1bc86016e6.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta description="עידן ניצן נטרופת, רפלקסולוג, ארומתרפיסט, מטפל בצמחי מרפא, פרחי באך, רייקי, תזונה ועוד">
+    <meta name="עידן ניצן נטרופת, רפלקסולוג, ארומתרפיסט, מטפל בצמחי מרפא, פרחי באך, רייקי, תזונה ועוד">
 </head>
 <body>
     <!-- Navgation Bar -->
@@ -23,7 +23,7 @@
         <a href="#">רייקי</a>
         <a href="products.html">מוצרים</a>
         <a href="about.html">אודות</a>
-        <a href="#" class="icon" onclick="displayMenu();clickOutside();"/>
+        <a href="#" class="icon" onclick="displayMenu();clickOutside();">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
@@ -63,10 +63,10 @@
         <ul>
           <li>
             <div class="card">
-              <img src="img/adult-black-jacket-blur-1839564.jpg" alt="קרם">
+              <img src="img/aroma-care-close-up-725998.jpg" alt="קרם">
               <div class="card-content">
-                <h3 class="card-title">רפלקסולוגיה</h3>
-                <p>אהה סליחה, זה הרבה יותר מסתם עיסוי לכף הרגל... </p>
+                <h3 class="card-title">רפלקסולוגיה - יותר מסתם עיסוי?</h3>
+                <p>אמ:לק - מחקרים הוכיחו שרפלקסולוגיה  גרמה לשינויים משמעותיים במטופלים שהקפידו עליה לאורך זמן</p>
                 <a href="reflexology.html" class="btn">ספר לי עוד</a>
               </div>
             </div>
@@ -75,8 +75,8 @@
             <div class="card">
               <img src="img/animal-animal-photography-blurred-background-2071873.jpg">
               <div class="card-content">
-                <h3 class="card-title">צמחי מרפא</h3>
-                <p>איך אני אוהבת זוטא.... </p><br>
+                <h3 class="card-title">צמחי מרפא - האם זה באמת עובד?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugit odio doloremque earum est error aliquid repudiandae veniam, at iusto voluptate, numquam officia architecto, voluptatibus vel doloribus consectetur beatae facilis? </p><br>
                 <a href="plants.html" dir="rtl" class="btn">ספר לי עוד</a>
               </div>
             </div>
@@ -86,7 +86,7 @@
               <img src="img/adult-blur-close-up-2045530.jpg" alt="קרם">
               <div class="card-content">
                 <h3 class="card-title">ארומתרפיה</h3>
-                <p>הקרם פנים הכי טוב שיש בעולם - באחריות! </p>
+                <p>הנה הגיעה התקופה הזאת בשנה, בה הגוף מתכנס לתוך עצמו ורק רוצה ...</p>
                 <a href="aroma.html" dir="rtl" class="btn">ספר לי עוד</a>
               </div>
             </div>
@@ -98,7 +98,7 @@
         <div class="content-wrap">
           <h2 class="content-title">סוגי טיפולים</h2>
           <ul>
-            <li>
+            <li class="tipul-icons">
               <a href="#"><img src="icons/herbal.png" alt=""></a>
               <h5>נטרופתיה</h5>
             </li>
@@ -194,10 +194,10 @@
                   <div class="contact-form">
                     <h3 dir="rtl">אל תהיו זרים - צרו קשר</h3>
                     <form dir="rtl">
-                      <p><label for=""><input type="text" required=""  placeholder="שם מלא*"></label></p>
-                      <p><label for=""><input type="Email" required=""  placeholder="מייל*"></label></p>
-                      <p><label for=""><input type="Phone" required=""  placeholder="טלפון*"></label></p>
-                      <p><label for=""><select name="subject" id="drop-down-subject">
+                      <p><label for="fullname"><input type="text" required=""  placeholder="שם מלא*"></label></p>
+                      <p><label for="email"><input type="Email" required=""  placeholder="מייל*"></label></p>
+                      <p><label for="phonenumber"><input type="number" required=""  placeholder="טלפון*"></label></p>
+                      <p><label for="subject"><select name="subject" id="drop-down-subject">
                                 <option dir="rtl" value="נושא הפנייה">נושא הפנייה*</option>
                                 <option dir="rtl" value="אני מתעניינ/ת בטיפול">אני מתעניינ/ת בטיפול</option>
                                 <option dir="rtl" value="ארומתרפיה">ארומתרפיה</option>
@@ -206,7 +206,7 @@
                                 <option value="תזונה">תזונה</option>
                                 <option dir="rtl" value="יש לי שאלה מקצועית">יש לי שאלה מקצועית</option>
                               </select></label></p>
-                      <p class="full-form"><label for=""><textarea name="message" required=""  cols="5" rows="5">הקלידי את ההודעה שלך כאן...</textarea></label></p>
+                      <p class="full-form"><label for="textarea"><textarea name="message" required=""  cols="5" rows="5">הקלידי את ההודעה שלך כאן...</textarea></label></p>
 
                       <button class="btn" type="submit">שלח/י</button>
                       <button class="btn" type="reset">איפוס</button>
@@ -223,8 +223,8 @@
               <a href="#showcase"><i class="fas fa-arrow-up"></i></a>
               
             </footer>
-    </div>
-    <script type="text/javascript">
+
+    <script>
         /************** close & open menu ********************/
             function displayMenu(){
               var x = document.getElementById("mytopnavbar");
