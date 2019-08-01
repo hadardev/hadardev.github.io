@@ -49,7 +49,8 @@ p {
       right: 25px;
     }
     .topnavbar {
-      background: #ECC8B0 ;
+      /*background: #ECC8B0 ;*/
+      background: #EDB596;
       overflow: hidden;
       top: 0;
       width: 100%;
@@ -171,13 +172,13 @@ p {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #section-c li {
   padding: 2em;
   width: 64px;
   margin: 0 auto;
-  
 }
 
 h5 {
@@ -229,10 +230,10 @@ footer .fa-arrow-up {
 }
 
 .container-form {
-  max-width: 1070px;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  padding: 2em;
+  padding: 0.7em;
 }
 
 .company-info-form ul {
@@ -269,18 +270,28 @@ footer .fa-arrow-up {
 }
 
 .wrapper-form > * {
-  padding: 1em;
+  padding: 0.5em;
+}
+
+.container-form {
+  margin: 0 auto;
+  /*width: 100%;*/
 }
 
 .company-info-form {
   /*background-color: #EFBF8D;*/
   background-color: #F2A75A;
+  text-align: center; 
 
 }
 
 .company-info-form h3, .company-info-form ul {
   text-align: center;
-  margin: 0 0 1rem 0;
+  /*margin: 0 0 1rem 0;*/
+}
+
+.company-info-form h3 {
+  padding-bottom: 0;
 }
 
 /**************** INDISDE FROM STYLE **************/
@@ -379,11 +390,11 @@ footer .fa-arrow-up {
   }
 
   .wrapper-form > * {
-    padding: 2em;
+    padding: 1em;
   }
 
   .company-info-form h3, .company-info-form ul, .company-info .brand {
-    text-align: right;
+    text-align: center;
   }
 
 }
@@ -429,8 +440,8 @@ footer .fa-arrow-up {
 }
 
 
-/************** MEDIA QUERIES VERY SMALL SCREENS ***********/
-@media screen and (max-width: 400px) {
+/************** MEDIA QUERIES CONTACT FORM VERY SMALL SCREENS ***********/
+@media screen and (max-width: 375px) {
   .company-info-form .text-info {
     font-size: 0.8em;
   }
@@ -438,5 +449,12 @@ footer .fa-arrow-up {
   .company-info-form h3 {
     font-size: 1em;
   }
-  
+
+  .container-form {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.2em;
+  }
+
+
 }
