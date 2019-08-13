@@ -55,6 +55,7 @@ p {
       top: 0;
       width: 100%;
       position: fixed;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .topnavbar a {
       display: inline-block;
@@ -150,6 +151,7 @@ p {
   margin-bottom: 1em;
   background: #EFBF8D;
   color: #333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-content {
