@@ -76,6 +76,12 @@ p {
     .topnavbar {
        transition: top 0.3s;
     }
+
+    a.active {
+      color: white;
+    }
+
+
 /********************** MENU ICON *************************/
 .bar1, .bar2, .bar3 {
   width: 35px;
@@ -106,7 +112,7 @@ p {
 
 #showcase .bg-img {
   position: absolute;
-  background: #EFBF8D url('img/tapuz1_new.jpg');
+  background: #EFBF8D url('img/tapuz1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -156,9 +162,14 @@ p {
   padding: 1.5em;
 }
 
+#section-b .card img {
+  height: auto;
+}
+
 #section-b a {
   transition: 0.6s;
 }
+
 /********************** SECTION-c *************************/
 #section-c {
   background: #EFBF8D ;
@@ -261,7 +272,7 @@ footer .fa-arrow-up {
 
 .company-info-form .contact-image img {
   /*display: none;*/
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
   object-fit: contain;
 }
@@ -406,6 +417,11 @@ footer .fa-arrow-up {
     text-align: center;
   }
 
+  .company-info-form .contact-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 }
 
 /************** MEDIA QUERIES NAVGATION BAR ***********/
@@ -459,7 +475,6 @@ footer .fa-arrow-up {
     font-size: 1em;
   }
 
-
   .container-form {
   margin-left: auto;
   margin-right: auto;
@@ -467,6 +482,4 @@ footer .fa-arrow-up {
   }
 
 
-
-  
 }
